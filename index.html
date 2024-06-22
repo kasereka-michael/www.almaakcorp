@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Description of your page">
-    <meta name="author" content="Your Name">
+    <meta name="description" content="almmakcorp website second version started from jun 22 2024">
+    <meta name="author" content="kasereka michael">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <title>Page Title</title>
-    <link rel="stylesheet" href="/assets/main.css"> <!-- Link to your CSS file -->
-    <script src="script.js" defer></script> <!-- Link to your JavaScript file -->
+    <link rel="stylesheet" href="/assets/css/main.css"> 
+     <link rel="stylesheet" href="/assets/css/responsive.css">
+    <script src="script.js" defer></script> 
 </head>
 <body>
     <!-- Header section -->
@@ -23,21 +24,26 @@
                     <p class="petit-title-italic">SRAL</p>
                 </div>
             </div>
-            <div class="links-side">
-                 <div class="design">
-                </div>
-                <ul class="links-container">
-                    <li class="nav-link l-active"><a href="#">Home</a></li>
-                    <li class="nav-link"><a href="#">About</a></li>
-                    <li class="nav-link"><a href="#">Service</a></li>
-                    <li class="nav-link"><a href="#">Contact</a></li>
-                </ul>
-                <div class="circle-design">
-                    <span class="boule"></span>
-                    <span class="boule"></span>
-                    <span class="boule"></span>
-                </div>
-
+            <div class="responsiveness">
+                    <div class="links-side">
+                        <div class="design">
+                        </div>
+                        <ul class="links-container">
+                            <li class="nav-link l-active"><a href="#">Home</a></li>
+                            <li class="nav-link"><a href="#">About</a></li>
+                            <li class="nav-link"><a href="#">Service</a></li>
+                            <li class="nav-link"><a href="#">Contact</a></li>
+                        </ul>
+                        <div class="circle-design">
+                            <span class="boule"></span>
+                            <span class="boule"></span>
+                            <span class="boule"></span>
+                        </div>
+                    </div>
+                    <button class="responsive-button-nav hide"> 
+                        <ion-icon class="open" name="menu-sharp"></ion-icon>
+                        <ion-icon class="close hide" name="close-outline"></ion-icon>
+                    </button>
             </div>
         </nav>
     </header>
@@ -88,10 +94,12 @@
         </section>
         <section class="third-section">
        
-         <h2 class="services-title">Our Diverse Services Include:</h2>
+         <h2 class="services-title">Our Diverse Services Include</h2>
              <div class="services-container">
+             
+                <!-- first card -->    
                 
-                            <!-- first card -->    
+                
                 <div class="service-card">
                     <div class="head-service">
                     
@@ -565,7 +573,7 @@ Vehicle Services: Import, sale, and rental of vehicles, including maintenance an
             </div>
 
              <div>
-                    <h3 class="about-us-text-head services">CONTACT US</h3>    
+                    <h3 class="about-us-text-head contact">CONTACT US</h3>    
                 </div>
 
         </section>
@@ -596,7 +604,7 @@ Vehicle Services: Import, sale, and rental of vehicles, including maintenance an
         <div class="important-notice">
             <h2 class="notice-title contact-title">Important Notice</h2>
             <p class="notice-text contact-title">Your Input Matters!</p>
-            <p class="notice-text contact-title">Thank you for considering ALMAACORP SARL for your needs! To ensure we provide you with the best service and keep you in the loop, we kindly request your cooperation in filling out our contact form. Please note: Fields marked with an asterisk (*) are mandatory. These fields are essential for us to understand your requirements and maintain effective communication.</p>
+            <p class="notice-text contact-title">Thank you for considering ALMAACORP SARL for your needs! To ensure we provide you with the best service and keep you in the loop, we kindly request your cooperation in filling out our contact form. Please note: Fields marked with an asterisk (<span class="asterisk">*</span>) are mandatory. These fields are essential for us to understand your requirements and maintain effective communication.</p>
         </div>
     </div>
 

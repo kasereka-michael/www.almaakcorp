@@ -1,0 +1,166 @@
+@media (max-width: 1803px) {
+    .main-container-design{
+        margin: 0 5rem;
+        overflow: hidden;
+    }
+    .about-head{
+        position:absolute;
+        border-bottom: 30rem solid var(--color-accent);
+        border-left: 35rem solid transparent;
+        border-right: 0px solid transparent;
+        height: 0;
+        right: 0;
+        margin-left: 0rem;
+        z-index: 3;
+        width: 40%;
+        margin-top: -20rem;
+        margin-right: 5rem;
+      }
+      .company-information{
+        position: absolute;
+        right: 10%;
+        top: 6%;
+        height: fit-content;
+      }
+}
+
+@media (max-width: 1500px) {
+
+    .grand-title{
+        margin-top: 13rem;
+        font-size: 5rem;
+        font-family: "DM Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: italic;
+        letter-spacing: -6px; 
+        padding-left: 6rem;
+        
+    }
+
+    .services{
+        margin-top: 2rem;
+      }
+
+    .vision{
+        margin-top: 8rem;
+        position: relative;
+        font-size: 4rem;
+        font-weight: 100;
+        font-family: "Lexend", sans-serif;
+        z-index: 3;
+      }
+
+    .text-light{
+        font-size: 1rem;
+        margin-left: 22rem;
+        font-style: italic;
+        font-family: "Lexend", sans-serif;
+        position: relative;    
+        font-weight: 200;
+        z-index: 5;
+        padding-top: 10rem;
+    }
+      .company-information{
+        position: absolute;
+        left: 40%;
+        top: 40%;
+      }
+    .second-section{
+        position: relative;
+        background-color: var(--color-primary);
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    }
+    .services{
+        position: absolute;
+        left: 35%;
+        bottom: 0;
+      }
+      /* .third-section{
+        padding-bottom: 10rem;
+      } */
+      .contact{
+        border-bottom: none;
+      }
+      
+}
+
+@media (max-width: 1300px) {
+   
+
+    .grand-title{
+        margin-top: 11rem;
+        font-size: 5rem;
+        font-family: "DM Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: italic;
+        letter-spacing: -6px; 
+        padding-left: 6rem;
+        
+    }
+
+
+    .text-light{
+        font-size: 1rem;
+        margin-left: 22rem;
+        font-style: italic;
+        font-family: "Lexend", sans-serif;
+        position: relative;    
+        font-weight: 200;
+        z-index: 5;
+        padding-top: 13rem;
+    }
+
+
+    .about-head{
+        position:absolute;
+        background-color:  var(--color-accent);
+        border-right: 0px solid transparent;
+        height: 0;
+        right: 0;
+        margin-left: 0rem;
+        z-index: 3;
+        height: 1rem;
+        width: 30%;
+        margin-top: -20rem;
+        margin-right: 5rem;
+      }
+      .the-line {
+      display: none;
+      }
+      .vision{
+        margin-top: 11rem;
+      }
+
+}
+
+/* 1253 */
+@media (max-width: 1253px) {
+    .mission{
+        margin-top: 13rem;
+    }
+    .about-us-text-head{
+        padding: 1rem;
+    }
+}
+/* 1146 */
+
+@media (max-width: 1146px) {
+    .mission{
+        margin-top: 15rem;
+    }
+    .about-us-text-head{
+        padding: 0.1rem;
+    }
+}
+
+@media (max-width: 992px) {}
+
+
+@media (max-width: 768px) {}
+
+
+@media (max-width: 576px) {}

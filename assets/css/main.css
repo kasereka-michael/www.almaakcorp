@@ -9,7 +9,7 @@
     --color-accent: #1c2b52;
     --color-light: #889fbe;
     --color-muted: #8d96a2;
-    --color-dark: #1f1f1c;
+    --color-dark: #2C3333;
     --color-blue: #374b80;
     --color-light-blue: #9eb5c7;
 
@@ -80,9 +80,12 @@ body{
     flex-direction: column;
 }
 .design{
-    border-left: 2rem solid transparent;
-    border-bottom: 2rem solid var(--color-accent);
-    margin-left: 10rem;
+    border-left: 3rem solid transparent;
+    border-bottom: 3rem solid var(--color-accent);
+    margin-right: -20rem;
+    margin-left: 16rem;
+    margin-top: -2rem;
+    margin-bottom: 1rem;
 }
 .links-container{
     display: flex;
@@ -110,7 +113,20 @@ body{
     padding: 0.5rem;
     border-radius: 10px;
 }
-
+.responsiveness{
+  display: flex;
+  align-items: center;
+}
+.responsive-button-nav{
+  padding: 0.3rem;
+  font-size: 2rem;
+  margin: 1rem 2rem 0 0;
+  background-color: var(--color-dark);
+  color: var(--color-secondary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .circle-design{
     display: flex;
     width: 100%;
@@ -175,6 +191,7 @@ body{
     overflow: hidden;
 }
 .for-vision{
+  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -210,6 +227,7 @@ body{
     position: absolute;
     top: 0;
     margin-top: 2rem;
+    
     padding: 3px;
     margin-left: -16rem; /* Adjust this value as needed for the desired skew effect */
     height: 26rem;
@@ -254,9 +272,10 @@ body{
     margin-top: 11rem;
   }
   .mission{
-   
+ 
   }
   .text-mission{
+  
     margin-left: -23rem;
     margin-top: 1rem;
     left: 0;
@@ -291,6 +310,7 @@ body{
   }
   .services{
     margin-top: 4rem;
+    border: none;
   }
   .third-section{
     background-color: var(--color-accent);
@@ -316,14 +336,14 @@ body{
   }
   .service-card{
     width: 15rem;
-    height: 22rem;
-
+    height: 24rem;
     filter:drop-shadow(1px 1px 2px var(--color-light-blue));
     background-color: var(--color-primary);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
   }
   .service-card-footer{
     align-self: flex-end;
@@ -331,7 +351,7 @@ body{
     justify-content: space-around;
     width: 100%;
     padding: 1rem 0;
-    background-color: var(--color-light);
+    background-color: var(--color-dark);
     border-radius: 10px 10px 0 0;
   }
   .head-service{
@@ -340,8 +360,19 @@ body{
   .services-icon ion-icon{
     font-size: 3rem;
     color: var(--color-accent);
-    padding-top: 2rem;
+    padding: 1rem;
+    background-color: var(--color-secondary);
+    margin: 1rem;
+    border-radius: 50px;
   }
+  .service-card:hover  .services-icon ion-icon{
+    color: var(--color-secondary);
+    background-color: var(--color-accent);
+    transform: rotate3d(2deg);
+    cursor: pointer;
+  }
+
+
 .service-title{
   color: var(--color-secondary);
   font-size: 1rem;
@@ -554,4 +585,7 @@ body{
       min-width: 100%;
       text-align: center;
   }
+}
+.hide{
+  display: none;
 }
