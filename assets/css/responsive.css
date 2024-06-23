@@ -153,14 +153,233 @@
         margin-top: 15rem;
     }
     .about-us-text-head{
-        padding: 0.1rem;
+        padding: 1rem;
+        border: none;
+        font-size: 3rem;
+    }
+    .text-light{
+        margin-top: 1rem;
+        margin-left: 17rem;
+    }
+    .first-container-about{
+        padding:1rem;
+        margin-left: 1rem;
+        margin-left: 6rem;
+    }
+
+}
+/* 1037 */
+@media (max-width: 1037px) {
+    .main-container-design{
+        margin: 0;
+        overflow: hidden;
+    }
+    .text-light{
+        margin-left: 17rem;
     }
 }
 
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+    .text-light{
+        margin-top: 1rem;
+    }
+    .links-container{
+        display: none;
+    }
+    .responsive-button-nav{
+        display: block;
+        margin-left: 2rem;
+    }
 
+    
+}
 
-@media (max-width: 768px) {}
+@media (max-width: 900px) {
+    .text-light{
+        margin-top: 1rem;
+    }
+    .mission{
+        margin-top: 15rem;
+    }
 
+    .navbar-container.responsiv-nav{
+        align-self: auto;
+        .links-container{
+            display: flex;
+            align-self: center;
+            flex-direction: column;
+            margin-bottom: 1rem;
+        }
+        .logo-container{
+            flex-wrap: wrap;
+        }
+        .circle-design{
+              margin-bottom: 2rem;  
+        }
+      }
 
-@media (max-width: 576px) {}
+}
+
+/* 887 */
+@media (max-width: 889px) {
+    .text-light{
+        margin-top: 1rem;
+    }
+    .mission{
+        margin-top: 14rem;
+    }
+    .about-us-text-head{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 850px) {
+    .text-light{
+        margin-top: -1rem;
+    }
+    .mission{
+        margin-top: 11rem;
+    }
+}
+/* 769 */
+@media (max-width: 769px) {
+    .about-head{
+       display: flex;
+       justify-content: space-between;
+       text-align: center;
+       flex-direction: column;
+       width: 100%;
+       margin-right: 0;
+       background-image: url("/assets/images/bksection2.png");
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-color: none;
+ 
+    }
+    .first-container-about{
+        border: none;
+        height: 10rem;
+        width: 100%;
+        margin-top: -2rem;
+        margin-left: 0;        
+        
+    }
+    /* https://lovepik.com/images/png-technology-line-picture.htm */
+    .fourth-section{
+        width: 100%;
+        height: fit-content;
+        background-color: var(--color-blue);
+        display: flex;
+        text-align: center;
+        justify-content: start;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .grand-title{
+        font-size: 4rem;
+    }
+    .container {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+      }
+      .text-light{
+        font-size: 0.9rem;
+        margin: 10rem 0rem;
+        padding: 2rem;
+      }
+      .mission{
+        margin-top: 11rem;
+        font-size: 1.5rem;
+      }
+      .text-mission{
+        margin-top: 0.2rem;
+        font-size: 0.9rem;
+        padding: 1rem;
+        margin-left: 0rem;
+      }
+      .vision,.reality{
+        font-size: 3rem;
+      }
+      .third-section{
+        background-image: url("/assets/images/aboutbk2.png");
+        background-repeat: repeat;
+        background-size: contain;
+      }
+
+    }
+@media (max-width: 576px) {
+    .logo-text{
+        display: none;
+    }
+    .grand-title{
+        font-size: 3rem;
+        text-align: center;
+        padding-left: 0rem;
+    }
+    .text-light{
+        margin-bottom: 1rem;
+    }
+    .mission{
+        padding: 3rem 0 0;
+    }
+    .text{
+        margin-left: -21rem;
+  }
+  .services{
+    left: 15%;
+  }
+  .company-information{
+    margin-left: -7rem;
+  
+    }
+    .vision,.reality{
+        font-size: 2rem;
+    }
+    .reality{
+        letter-spacing: -1px; 
+    }
+    .reality span{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .grand-title{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .text-light{
+        padding: 1rem;
+    }
+    .second-section{
+        height: 120vh;
+    }
+}
+@media (max-width: 360px) {
+
+    .services{
+        font-size: 3rem;
+        margin: 1rem 0 0;
+        text-align: center;
+    }
+    .text-light{
+        margin: 1rem;
+    }
+    .second-section{
+        height: 125vh;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .services{
+        font-size: 3rem;
+        margin: 1rem 0 0;
+        text-align: center;
+    }
+
+    .second-section{
+        height: 145vh;
+    }
+}
