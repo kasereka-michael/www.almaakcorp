@@ -598,3 +598,94 @@ body{
 }
 
 
+    /* Basic styles for modal overlay */
+    .modal {
+      display: none; 
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%;
+      z-index: 10;
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+      background-color: var(--color-dark);
+      margin: 15% auto; /* 15% from the top and centered */
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+      max-width: 600px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    /* Modal Header */
+    .modal-header {
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #e5e5e5;
+      background-color: var(--color-accent);
+      color: white;
+      font-size: 2rem;
+    }
+
+    /* Modal Body */
+    .modal-body {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .modal-body img {
+      max-width: 10rem;
+      margin-right: 1rem;
+    }
+
+    .modal-body div {
+      max-width: calc(100% - 13rem);
+    }
+
+    /* Modal Footer */
+    .modal-footer {
+      padding-top: 15px;
+      border-top: 1px solid #e5e5e5;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Close Button */
+    .close-popup {
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+
+    /* Button */
+    .btn-popup {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn-secondary {
+      background-color: var(--color-primary);
+      color: white;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1rem;
+    }
+
+    .btn-secondary:hover {
+      background-color: #5a6268;
+    }
