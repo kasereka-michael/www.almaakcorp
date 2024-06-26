@@ -55,7 +55,7 @@
                 <div class="container">
         <div class="contact-form">
             <h2 class="contact-title">Leave Us a Message</h2>
-            <form class="contact-form-form">
+            <form class="contact-form-form" id="my-form" action="https://formspree.io/f/xanwwved" method="POST">
                 <label class="contact-label" for="name">Your Name: <span class="asterisk">*<span></label>
                 <input class="contact-input" type="text" id="name" name="name" required>
                 
@@ -120,8 +120,29 @@
                 <p class="footer-text">Hi! This is Almaak, At ALMACORP SARL, our commitment extends beyond delivering services; it's about creating value and fostering lasting partnerships. Explore our diverse offerings, and if you have any inquiries or need personalized assistance, feel free to reach out.</p>
             </div>
 
-        <p class="all-right">&copy; 2024 almaakcorp sral. All rights reserved.</p>
+         <p class="all-right">&copy; 2024 almaakcorp sral. All rights reserved. Developed & Designed by <a href="mailto:kaserekamichael23526@gmail.com">K.michael</a> </p>
     </footer>
+
+
+<div id="successModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-title">Successful submission</h5>
+      </div>
+      <div class="modal-body">
+        <img src="assets/images/log/almaaklogo.png" alt="Logo">
+        <div>
+          <p id="my-form-status">Your submission was successful!</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-popup btn-secondary" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -138,6 +159,55 @@
     });
 
     </script>
+
+
+     <script>
+  var form = document.getElementById("my-form");
+  
+  async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("my-form-status");
+    var modal = document.getElementById("successModal");
+    var title = document.getElementById("modal-title");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+          'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        status.innerHTML = "Thanks for your submission we gonna get back to you soon!";
+        title.innerHTML ="Successful Submission"
+        modal.style.display="block";
+        form.reset()
+      } else {
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+          } else {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+            title.innerHTML ="We are sorry!"
+            modal.style.display="block";
+          }
+        })
+      }
+    }).catch(error => {
+      status.innerHTML = "Oops! There was a problem submitting your form"
+         title.innerHTML ="We are sorry!"
+            modal.style.display="block";
+    });
+  }
+  form.addEventListener("submit", handleSubmit)
+</script>
+
+<script>
+ function closeModal() {
+      document.getElementById('successModal').style.display = 'none';
+    }
+</script>
+
 
 </body>
 </html>
