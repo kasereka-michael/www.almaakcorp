@@ -689,3 +689,24 @@ body{
     .btn-secondary:hover {
       background-color: #5a6268;
     }
+    #goTotop{
+      position: fixed;
+      z-index: 10;
+      bottom: 2%;
+      right: 1%;
+      height: fit-content;
+      background-color: transparent;
+    }
+    #goTotopBtn{
+      background-color: var(--color-primary);
+      color: var(--color-secondary);
+      border: none;
+      outline: none;
+      padding: 0.6rem;
+      font-size: 1.7rem;
+      height: 3rem;
+      width: 3rem;
+      text-align: center;
+      border-radius: 100%;
+      cursor: pointer;
+    }

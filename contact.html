@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="almmakcorp website second version started from jun 22 2024">
     <meta name="author" content="kasereka michael">
-      <meta name="keywords" content="ALMAAKCORP, LMACORP SARL, Contact Us, GOMA, North-Kivu, Democratic Republic of Congo, Limited Liability Company, contact form, leave a message, customer support, inquiries, address, phone, email, social media, communication, feedback, service request, client assistance">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <meta name="keywords" content="ALMAAKCORP, LMACORP SARL, Contact Us, GOMA, North-Kivu, Democratic Republic of Congo, Limited Liability Company, contact form, leave a message, customer support, inquiries, address, phone, email, social media, communication, feedback, service request, client assistance">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-    <title>Page Title</title>
+    <title>ALMAAK CORPORATION CONTACT US</title>
     <link rel="stylesheet" href="/assets/css/main.css"> 
      <link rel="stylesheet" href="/assets/css/responsive.css">
-
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+<link rel="ico" type="image/ico" href="/assets/images/favicon.ico">
+<link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
     <!-- Header section -->
@@ -21,13 +26,13 @@
             <div class="logo-container">
                 <a href="" class="logo-parent"><img src="/assets/images/log/almaaklogo.png" class="logo" alt=""></a>
                 <div class="logo-text">
-                    <h4 class="petit-title">ALMAAKCORP</h4>
-                    <p class="petit-title-italic">SRAL</p>
+                    <h4 class="petit-title" data-aos="fade-right">ALMAAKCORP</h4>
+                    <p class="petit-title-italic" data-aos="fade-left">SRAL</p>
                 </div>
             </div>
             <div class="responsiveness">
                     <div class="links-side">
-                        <div class="design">
+                        <div class="design" data-aos="fade-right">
                         </div>
                         <ul class="links-container">
                             <li class="nav-link "><a href="index.html">Home</a></li>
@@ -35,7 +40,7 @@
                             <li class="nav-link "><a href="services.html">Service</a></li>
                             <li class="nav-link l-active"><a href="contact.html">Contact</a></li>
                         </ul>
-                        <div class="circle-design">
+                        <div class="circle-design" data-aos="fade-left">
                             <span class="boule"></span>
                             <span class="boule"></span>
                             <span class="boule"></span>
@@ -49,12 +54,21 @@
         </nav>
     </header>
 
+
+
+  <div id="goTotop" class="hide" >
+        <button id="goTotopBtn" data-aos="fade-down">
+            <ion-icon name="arrow-up-outline"></ion-icon>
+        </button>
+    </div>
+
+
     <!-- Main content section -->
     <main class="main-container-design">
      <section class="fourth-section">
-                <h2 class="services-title">Leave us a text</h2>
+                <h2 class="services-title" data-aos="fade-up">Leave us a text</h2>
                 <div class="container">
-        <div class="contact-form">
+        <div class="contact-form" data-aos="fade-right">
             <h2 class="contact-title">Leave Us a Message</h2>
             <form class="contact-form-form" id="my-form" action="https://formspree.io/f/xanwwved" method="POST">
                 <label class="contact-label" for="name">Your Name: <span class="asterisk">*<span></label>
@@ -72,7 +86,7 @@
                 <button class="contact-button" type="submit">Submit</button>
             </form>
         </div>
-        <div class="important-notice">
+        <div class="important-notice" data-aos="fade-down">
             <h2 class="notice-title contact-title">Important Notice</h2>
             <p class="notice-text contact-title">Your Input Matters!</p>
             <p class="notice-text contact-title">Thank you for considering ALMAACORP SARL for your needs! To ensure we provide you with the best service and keep you in the loop, we kindly request your cooperation in filling out our contact form. Please note: Fields marked with an asterisk (<span class="asterisk">*</span>) are mandatory. These fields are essential for us to understand your requirements and maintain effective communication.</p>
@@ -121,7 +135,7 @@
                 <p class="footer-text">Hi! This is Almaak, At ALMACORP SARL, our commitment extends beyond delivering services; it's about creating value and fostering lasting partnerships. Explore our diverse offerings, and if you have any inquiries or need personalized assistance, feel free to reach out.</p>
             </div>
 
-         <p class="all-right">&copy; 2024 almaakcorp sral. All rights reserved. Developed & Designed by <a href="mailto:kaserekamichael23526@gmail.com">K.michael</a> </p>
+        <p class="all-right">&copy; 2024 almaakcorp sral. All rights reserved.</p>
     </footer>
 
 
@@ -147,7 +161,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+     <script type="text/javascript" src="/assets/js/script.js"></script>
     <script>
     $('#nav-btn').click(function(){
         console.log('yes here iam');
@@ -208,7 +222,8 @@
       document.getElementById('successModal').style.display = 'none';
     }
 </script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
 
 </body>
 </html>
