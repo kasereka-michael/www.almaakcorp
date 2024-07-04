@@ -249,7 +249,7 @@
        flex-direction: column;
        width: 100%;
        margin-right: 0;
-       background-image: url("/assets/images/bksection2.png");
+       background-image: url("/assets/images/bksection2.webp");
        background-repeat: no-repeat;
        background-size: cover;
     
@@ -263,7 +263,7 @@
         margin-left: 0;        
         
     }
-    /* https://lovepik.com/images/png-technology-line-picture.htm */
+    /* https://lovepik.com/images/webp-technology-line-picture.htm */
     .fourth-section{
         width: 100%;
         height: fit-content;
@@ -301,7 +301,7 @@
         font-size: 3rem;
       }
       .third-section{
-        background-image: url("/assets/images/aboutbk2.png");
+        background-image: url("/assets/images/aboutbk2.webp");
         background-repeat: repeat;
         background-size: contain;
       }

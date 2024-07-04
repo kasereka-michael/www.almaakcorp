@@ -143,7 +143,7 @@ body{
 .first-section{
     height: 70vh;
     width: 100%;
-    background-image: url("/assets/images/container.jpg");
+    background-image: url("/assets/images/container.webp");
     background-position: center;
     background-repeat: none;
     background-size: cover;
@@ -321,7 +321,7 @@ body{
     display: flex;
     text-align: center;
     flex-direction: column;
-    background-image: url("/assets/images/servicebk.png");
+    background-image: url("/assets/images/servicebk.webp");
     background-position: center;
     background-size: contain;
   }
@@ -514,7 +514,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url("/assets/images/footerbk.png");
+  background-image: url("/assets/images/footerbk.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
