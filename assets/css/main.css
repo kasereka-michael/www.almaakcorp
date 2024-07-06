@@ -340,6 +340,7 @@ body{
   }
   .service-card{
     width: 15rem;
+    user-select: none;
     height: 24rem;
     filter:drop-shadow(1px 1px 2px var(--color-light-blue));
     background-color: var(--color-primary);
@@ -716,4 +717,17 @@ body{
       background-color: var(--color-secondary);
       color: var(--color-dark);
 
+    }
+    .slider-wrapper{
+      overflow: hidden;
+      max-width:1200px;
+      margin: 0 70px 2rem;
+    }
+    .slider-wrapper .swiper-pagination-bullet{
+      background-color: var(--color-secondary);
+      height: 15px;
+      width: 15px;
+    }
+    .swiper-button-prev, .swiper-button-next{
+      color: var(--color-secondary);
     }
